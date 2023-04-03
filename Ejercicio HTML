@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Curso Web</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo_form.css'>
+</head>
+    <body>
+        <!--Definición de Formulario según peticionario-->
+        <form class="form"name="DATOS PRINCIPALES" method="get" action=""><!--Etiqueta Formulario-->
+            <!--De aqui se ha quitado un section que era parte de la idea inicial.-->
+    <!-- A partir de este punto se hace primero diseño en figma, y despues se pasará a html y css-->
+            <!--Dos horas despues, y con ayuda de google, me doy cuenta que lo que hay que hacer es un formulario, 
+                que contenga todas las opciones de la 
+            etiqueta input, o casi todas.Por lo tanto, a partir de este momento sigo directamente en html, y despues veré el css-->
+            <label >FORMULARIO CURSO WEB</label>
+            <fieldset name="texto">
+                <section class="section">
+                    <!-- Nombre: campo texto obligatorio, con autofoco, tamaño 30 y longitud máxima de 20 -->
+                    <label class="etiquetas">NOMBRE:</label>
+                    <input class="campos"  required autofocus size="30" maxlength="20" >
+                </section>
+                <br>
+                <section class="section">
+                    <!-- Correo electrónico: campo de tipo email obligatorio.-->
+                    <label class="etiquetas">E-MAIL:</label>
+                    <input class="campos"   type="email" required name="email" >
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Contraseña: campo de tipo password con una longitud máxima de 8.-->
+                    <label class="etiquetas">CONTRASEÑA:</label>
+                    <input class="campos" type="password" maxlength="8">
+                </section>
+                <br>    
+                <section class="section">
+                    <!--- URL: campo de tipo url que muestre la ayuda "Escribe la URL".-->
+                    <label class="etiquetas">URL:</label>
+                    <input class="campos"   type="url">
+                </section>
+            </fieldset>
+            <br>
+            <fieldset name="FECHAHORA">
+                <section class="section">
+                    <!-- Fecha: campo de tipo date.-->
+                    <label class="etiquetas">Fecha:</label>
+                    <input class="campos"   type="date">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Tiempo: campo de tipo time.-->
+                    <label class="etiquetas">HORA:</label>
+                    <input class="campos"   type="time">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Fecha y Hora: campo de tipo FECHA Y HORA-->
+                    <label class="etiquetas">FECHA Y HORA:</label>
+                    <input class="campos"   type="datetime">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Mes: campo de tipo MES-->
+                    <label class="etiquetas">MES:</label>
+                    <input class="campos"   type="month">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Semana: campo de tipo SEMANA-->
+                    <label class="etiquetas">SEMANA:</label>
+                    <input class="campos"   type="week">
+                </section>
+            </fieldset>
+            <br>
+            <fieldset name="NUMEROS">
+                <section class="section">
+                    <!--- Número: campo de tipo NÚMERO-->
+                    <label class="etiquetas">NUMERO</label>
+                    <input class="campos"   type="number" MIN="-10" max="10">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Teléfono: campo de tipo TELÉFONO-->
+                    <label class="etiquetas">TELÉFONO</label>
+                    <input class="campos"   type="tel">
+                </section>
+            </fieldset>
+            <br>
+            <fieldset name="varios">
+                <section class="section">
+                    <!--- Busqueda: campo de tipo BUSQUEDA.-->
+                    <label class="etiquetas">BUSQUEDA</label>
+                    <input class="campos"   type="search">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Color Favorito: campo de tipo COLOR.-->
+                    <label class="etiquetas">COLOR FAVORITO</label>
+                    <input class="campos"   type="color">
+                </section>
+                <br>
+                <section class="section">
+                    <!--- Edad: campo de tipo RANGE-->
+                    <label class="etiquetas">EDAD</label>
+                    <input id="edad" class="campos"   type="range" min="18" max="65">
+                    
+                </section>
+            </fieldset>
+            <br>
+            <fieldset>
+
+                <!-- Control de tipo opcion, que solo se permite seleccionar 
+                una opción exclusivamente -->
+
+            <section class="section">
+                <!--- Bloque favorito: campo de tipo OPTION-->
+                <label class="etiquetas">BLOQUE PREFERIDO</label>
+                <br>
+                <input type="radio" id="bloque3" name="bloque_preferido" value="bloque3">
+                <label for="bloque3">Bloque 3</label>
+                
+                <input type="radio" id="bloque4"  checked name="bloque_preferido" value="bloque4">
+                <label for="bloque4">Bloque 4</label>           
+            </section>
+            <br>
+
+                <!-- Controles de tipo checkbox, en los cuales, se permite seleccionar, por defecto, 
+                una o varias opciones -->
+
+            <section class="section">
+                <!--- Seleccion: campo de tipo CheckBox.-->
+                <label class="etiquetas">TEMAS MAS INTERESANTES</label>
+                <br>
+                <input class="campos" type="checkbox">
+                <label class="etiquetas">B3T5</label>
+                <br>
+                <input class="campos" type="checkbox">
+                <label class="etiquetas">B3T6</label>
+                <br>
+                <input class="campos" type="checkbox">
+                <label class="etiquetas">B3T7</label>
+                <br>
+                <input class="campos" type="checkbox">
+                <label class="etiquetas">B3T8</label>
+                <br>
+                <input class="campos" type="checkbox" checked>
+                <label class="etiquetas">B2T4</label>
+            </section>
+            <br>
+        <!-- Control de tipo  Selección de Lista desplegable, con selección simple 
+            en la cual puedes seleccionar una sola opcion de la lista desplegable -->
+            
+
+                <label class="etiquetas">TEMA FAVORITO</label>
+                
+            <select name="bloques">
+                <option name="selecciona">Seleccinar un Tema</option>
+                <option name="bloque2" for="bloque1">
+                    BLOQUE 1
+                
+                </option>
+                <option name="bloque2" for="bloque2" >
+                    BLOQUE 2
+                </option>
+                <option name="bloque3" for="bloque3">
+                    BLOQUE 3
+                </option>
+            </select>    
+            </fieldset>
+                <br>
+            <fieldset>
+            <!-- Control de Selección, con varios Tramos o Categorias, y 
+                que permite seleccionar una o varias opciones de cada categoria.
+            Este control, cuando carga la página, aparece recogido, y si hacemos click
+            dentro de la caja de texto, se despliega una lista con categorias y subcategorias,
+            en la cual podemos seleccinar una opción o varias(pulsando la tecla ALT)-->
+                <br> 
+                <label for="bloques">Tema Favorito</label>
+                <br>
+                    <select  onfocus="this.size=1" onblur="this.size=1" onchange="this.size=13" multiple size="1" id="bloques" class="bloques"   >
+                        <option value="opciones">-- Selecciona una opción --</option>
+                        <optgroup class="bloques"  label="Bloque 1"  >
+                            <option>B1T1</option>
+                            <option>B1T2</option>
+                            <option>B1T3</option>
+                        </optgroup>
+                        <optgroup class="bloques"  label="Bloque 2">
+                            <option>B2T2</option>
+                            <option>B2T4</option>
+                            <option>B2T5</option>
+                        </optgroup>
+                        <optgroup class="bloques"  label="Bloque 3" >
+                            <option>B3T1</option>
+                            <option>B3T2</option>
+                            <option>B3T3</option>
+                        </optgroup>
+                    </select>
+                <br>                   
+                <br>
+                <!-- Control de tipo area de texto, para escribir largo y tendido, es un area de 20 filas,y 30 columnas -->
+                <label for ="areatexto">
+                    OPSERVACIONES
+                </label>
+                <br>
+                <textarea class="areatexto"name="areatexto" cols="30" rows="20">
+
+                </textarea>
+            
+            <!--Conjunto de controles tipo boton, con funciones de reset y enviar, que vacian los datos 
+                de cada campo del furmulario, el primero, o envia los datos del 
+                formulario, el segúndo, -->   
+            
+                <br>
+                <br>
+                <button type="reset">
+                    Limpiar
+                </button>
+                <button type="submit">
+                    Enviar
+                </button>
+            </fieldset>
+        </form>
+    </body>
+</html>
