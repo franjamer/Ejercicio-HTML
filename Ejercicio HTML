@@ -221,6 +221,16 @@
                     Enviar
                 </button>
             </fieldset>
+            <section class="observacion" id="observacion">
+
+            </section>
         </form>
+        <script>
+            var cajatext=document.getElementById("observacion");
+            cajatext.addEventListener("click",function(){
+                var capa=document.getElementById("observacion");
+                capa.innerHTML="Este texto esta creado desde JavaScript";
+            },false)
+        </script>
     </body>
 </html>
